@@ -14,6 +14,11 @@
 		0FC2508C1DE2920E008745BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FC2508B1DE2920E008745BD /* Assets.xcassets */; };
 		0FC2508F1DE2920E008745BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC2508D1DE2920E008745BD /* LaunchScreen.storyboard */; };
 		0FC2509A1DE2920E008745BD /* STFollowLayoutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC250991DE2920E008745BD /* STFollowLayoutUITests.m */; };
+		0FC250A61DE29366008745BD /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC250A51DE29366008745BD /* TestModel.m */; };
+		0FC250A81DE2939C008745BD /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FC250A71DE2939C008745BD /* 1.plist */; };
+		0FC250AC1DE29903008745BD /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC250AA1DE29903008745BD /* TestCell.m */; };
+		0FC250AD1DE29903008745BD /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FC250AB1DE29903008745BD /* TestCell.xib */; };
+		3A7D887FD1B23DD6AEFF32A4 /* libPods-STFollowLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89288875BBB07BB6BDFBF4DC /* libPods-STFollowLayout.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,15 @@
 		0FC250951DE2920E008745BD /* STFollowLayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STFollowLayoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC250991DE2920E008745BD /* STFollowLayoutUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STFollowLayoutUITests.m; sourceTree = "<group>"; };
 		0FC2509B1DE2920E008745BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FC250A41DE29366008745BD /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		0FC250A51DE29366008745BD /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		0FC250A71DE2939C008745BD /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		0FC250A91DE29903008745BD /* TestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
+		0FC250AA1DE29903008745BD /* TestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
+		0FC250AB1DE29903008745BD /* TestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
+		5B4B0CB5F3B14E9115827D01 /* Pods-STFollowLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STFollowLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-STFollowLayout/Pods-STFollowLayout.debug.xcconfig"; sourceTree = "<group>"; };
+		89288875BBB07BB6BDFBF4DC /* libPods-STFollowLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-STFollowLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C45DCF7823187F54FAAB9B34 /* Pods-STFollowLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STFollowLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-STFollowLayout/Pods-STFollowLayout.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A7D887FD1B23DD6AEFF32A4 /* libPods-STFollowLayout.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +81,8 @@
 				0FC2507E1DE2920E008745BD /* STFollowLayout */,
 				0FC250981DE2920E008745BD /* STFollowLayoutUITests */,
 				0FC2507D1DE2920E008745BD /* Products */,
+				B007B52DEBECD5C5E2AF5483 /* Pods */,
+				1C417F6E3BD91A2759CA0542 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +98,16 @@
 		0FC2507E1DE2920E008745BD /* STFollowLayout */ = {
 			isa = PBXGroup;
 			children = (
+				0FC250A71DE2939C008745BD /* 1.plist */,
 				0FC250821DE2920E008745BD /* AppDelegate.h */,
 				0FC250831DE2920E008745BD /* AppDelegate.m */,
 				0FC250851DE2920E008745BD /* ViewController.h */,
 				0FC250861DE2920E008745BD /* ViewController.m */,
+				0FC250A41DE29366008745BD /* TestModel.h */,
+				0FC250A51DE29366008745BD /* TestModel.m */,
+				0FC250A91DE29903008745BD /* TestCell.h */,
+				0FC250AA1DE29903008745BD /* TestCell.m */,
+				0FC250AB1DE29903008745BD /* TestCell.xib */,
 				0FC250881DE2920E008745BD /* Main.storyboard */,
 				0FC2508B1DE2920E008745BD /* Assets.xcassets */,
 				0FC2508D1DE2920E008745BD /* LaunchScreen.storyboard */,
@@ -111,6 +134,23 @@
 			path = STFollowLayoutUITests;
 			sourceTree = "<group>";
 		};
+		1C417F6E3BD91A2759CA0542 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89288875BBB07BB6BDFBF4DC /* libPods-STFollowLayout.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B007B52DEBECD5C5E2AF5483 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B4B0CB5F3B14E9115827D01 /* Pods-STFollowLayout.debug.xcconfig */,
+				C45DCF7823187F54FAAB9B34 /* Pods-STFollowLayout.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FC2509E1DE2920E008745BD /* Build configuration list for PBXNativeTarget "STFollowLayout" */;
 			buildPhases = (
+				4B3E04BF44668CFC9B95B15B /* [CP] Check Pods Manifest.lock */,
 				0FC250781DE2920E008745BD /* Sources */,
 				0FC250791DE2920E008745BD /* Frameworks */,
 				0FC2507A1DE2920E008745BD /* Resources */,
+				46F3A15A93455E0167FCCC6C /* [CP] Embed Pods Frameworks */,
+				821C89614A8882C93A0B3194 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +236,8 @@
 			files = (
 				0FC2508F1DE2920E008745BD /* LaunchScreen.storyboard in Resources */,
 				0FC2508C1DE2920E008745BD /* Assets.xcassets in Resources */,
+				0FC250A81DE2939C008745BD /* 1.plist in Resources */,
+				0FC250AD1DE29903008745BD /* TestCell.xib in Resources */,
 				0FC2508A1DE2920E008745BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +251,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		46F3A15A93455E0167FCCC6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STFollowLayout/Pods-STFollowLayout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B3E04BF44668CFC9B95B15B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		821C89614A8882C93A0B3194 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STFollowLayout/Pods-STFollowLayout-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0FC250781DE2920E008745BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -213,7 +306,9 @@
 			files = (
 				0FC250871DE2920E008745BD /* ViewController.m in Sources */,
 				0FC250841DE2920E008745BD /* AppDelegate.m in Sources */,
+				0FC250AC1DE29903008745BD /* TestCell.m in Sources */,
 				0FC250811DE2920E008745BD /* main.m in Sources */,
+				0FC250A61DE29366008745BD /* TestModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +432,7 @@
 		};
 		0FC2509F1DE2920E008745BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B4B0CB5F3B14E9115827D01 /* Pods-STFollowLayout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = STFollowLayout/Info.plist;
@@ -348,6 +444,7 @@
 		};
 		0FC250A01DE2920E008745BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C45DCF7823187F54FAAB9B34 /* Pods-STFollowLayout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = STFollowLayout/Info.plist;
@@ -400,6 +497,7 @@
 				0FC250A01DE2920E008745BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FC250A11DE2920E008745BD /* Build configuration list for PBXNativeTarget "STFollowLayoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +506,7 @@
 				0FC250A31DE2920E008745BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
